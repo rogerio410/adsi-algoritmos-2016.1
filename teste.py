@@ -8,10 +8,17 @@
 >>> subtracao(8,5)
 3
 """
+
+def main():
+	print 'Main is running...'
+	print soma(1,1)
+
 def soma(a, b):
     return a + b
 
 def subtracao(a, b):
     return a - b
 
+if __name__ == '__main__':
+	main()
 
