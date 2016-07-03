@@ -1,0 +1,50 @@
+
+
+
+# Atividade sem consulta - Parte 1
+
+
+# 1 - R: Significa que elas tantos poderão ser compiladas na máquina,
+# tanto poderão ser interpretadas, compreendidas e modificadas pelas pessoas
+# que as utilizam.
+
+# 2 - R: Dentre os erros que um programa poderá vir a apresentar durante o seu
+# funcionamento os mais comuns são os erros se sintaxe, que são quando o
+# programa não reconhece uma determinada variável que pode tanto não estar presente
+# tanto apenas estar mal colocada no caso, os erros de runtime que são quando o
+# programa tenta realizar algo que foge daquilo para o que ele foi feito ou aquilo
+# que está verdadeiramente ao seu alcance, e os casos de loops infinitos, que são
+# quando um programa realiza ações sem possuir um ponto de parada, o que o leva a um ciclo
+# infinito que por ventura poderá vir a prejudicar o desempenho da máquina.
+
+
+# 3 - R: Inteiro(int), Booleano(bool), float(float) e string(str). Variáveis do tipo int são usadas para transformar
+# determinados valores em inteiros, contanto que sejam numéricos, ex.: int(2.73), 2. Tipo Booleano é usado normalmente para determinar
+# se certa condição vem a ser verdadeira ou falsa, ex.: 2 == 3, False. Tipo float retorna valor de ponto flutuante,
+muito usos em calculos que não teronam numeros precisamente inteiros; ex.: 5/2.0, 2.5. 
+# E string é usado para converter qualquer elemento recebido em caracter ou mesmo, trabalhar com os que já possui
+# afim de comunicar algo ao usuário; ex.: type("1"), String.
+
+
+
+# 4 - R: Funções. As funções recebem parâmetros e a partir deles realizam
+# a ação a qual foram designadas retornando ou não um resultado.
+# A vantagem da utilização delas está na economia de espaço para o código,
+# que não necessitará gerar grandes blocos de linhas quase
+# totalmente repetidos para uma mesma operação, podendo recorrer as funções
+# para apenas colocar os parâmetros e esperar o resultado desejado.
+
+
+
+# 5 - R: Importar tudo - from calculadora import *
+# Importar apenas uma função - from calculadora import somar
+# Importar com um nome diferente - from calculadora import somar do adicionar
+
+
+
+
+
+
+
+
+

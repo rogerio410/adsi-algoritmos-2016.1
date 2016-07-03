@@ -1,0 +1,2 @@
+Interpretadas: é lida por um interpretador, ler e executa linha por linha.
+Compilada: Lê-se o código por inteiro e depois é executado.

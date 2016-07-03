@@ -1,0 +1,107 @@
+1.
+ AS linguagens compiladas necessitam de um programa que converta o codigo para a linguagem mais proxima da maquina.
+ As linguagens interpretadas ja sao interpretadas usando o interpretador. Ele vai agir como uma simulação de uma maquina cujo o ciclo de execução trata com lingugaem de alto nivel.
+2 .
+Erro de sintaxe é o erro em que a linguagem nao interpreta por falta de uma virgula ou uma string que não está dentro das aspas. Ex:
+print ola mundo será um erro de sintax o correto seria print"Ola mundo"
+Erro de identação a identação é a organização do codigo o padrão e que ele deve seguir. Ex: 
+print"erro de identacao"
+
+def erro():
+print"erro"
+
+erro()
+
+
+o correto seria:
+
+print"erro de identacao"
+
+def erro():
+	print"erro"
+
+erro()
+e o erro de execução ao executar o programa
+3. Expressões numericas que assumem valor de números 
+	type(1)
+	<type 'int'>
+   Strings que assumem letras e palavras ou numeros entre aspas
+	type("1")
+	<type 'str'>
+
+   Booleanas que assumem apenas falso ou verdadeiro	
+	1 == 1
+	True
+4. Podemos segmentar criando funções e importando para outro codigo chamando apenas a função.
+ n
+5. Importar o modulo inteiro: import.calculadora
+   Importar uma função: calculadora.subtrair
+   Importar e renomear apenas uma funçao: from math import subtrair as subtração 
+
+6. 
+vendedor=raw_input("Escreva o nome do vendedor:")
+salario_fixo=input("Escreva o seu salario fixo:")
+vendas_efetuadas=input("Qual valor das vendas efetuadas:")
+comissao_das_vendas = vendas_efetuadas*0.15
+valor_total = comissao_das_vendas + salario_fixo
+print"O valor total recebido e %.2f" %(valor_total)
+
+7.
+valor_A = input("Digite o valor A")
+valor_B = input("Digite o valor B")
+valor_C = input("Digite o valor C")
+valor_D = input("Digite o valor D")
+
+if valor_B > valor_C and valor_D > valor_A:
+	if valor_C + valor_D: 
+		print"valores aceitos"
+		
+	else:
+		print"valores nao aceitos"
+
+	
+		if valor_C + valor_D > valor_A + valor_B:
+			print"valores aceitos"
+		
+		else:
+			print"valores nao aceitos"
+			
+
+			if valor_A/2 == 0:
+				print"valores aceitos"
+			else:
+				print"valores nao aceitos"
+			
+				
+else:
+	print"valores nao aceitos"
+
+8.
+valor_a = input("Valor A:")
+valor_b = input("Valor B:")
+valor_c = input("Valor C:")
+modulo_vb_eVc = valor_b - valor_c
+sub_mod = modulo_vb_eVc*modulo_vb_eVc/modulo_vb_eVc
+perimetro = valor_a + valor_b + valor_c
+area_trapezio = ((valor_a+valor_b)/2)*valor_c
+modulo_va_eVc = valor_a - valor_c
+sub_mod2 = modulo_va_eVc*modulo_va_eVc/modulo_va_eVc
+modulo_va_eVb = valor_a - valor_b
+sub_mod3 = modulo_va_eVb*modulo_va_eVb/modulo_va_eVb
+
+if sub_mod < valor_a < valor_b + valor_c:
+	print"Atende a condicao 1 :perimetro:", perimetro
+else: 
+	print "Nao atende a condicao 1 :Area do trapezio", area_trapezio 
+
+if sub_mod2 < valor_b < valor_a +valor_c:
+	print"Atende a condicao 2 :perimetro:", perimetro
+else: 
+	print "Nao atende a condicao 2:Area do trapezio", area_trapezio 
+
+if sub_mod3 < valor_c < valor_a + valor_b:
+	print"Atende a condicao 3 :perimetro:", perimetro
+else: 
+	print "Nao atende a condicao 3:Area do trapezio", area_trapezio 
+
+

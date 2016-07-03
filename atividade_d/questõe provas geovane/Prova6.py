@@ -1,0 +1,5 @@
+vendedor = raw_input("Digite o nome do vendedor: ")
+salario_fixo = input("Digite o valor do salario fixo do vendedor: R$ ")
+total_de_vendas_mes = input("Digite o total de vendas feita pelo vendedor no mes: R$ ")
+salario_total = salario_fixo + (total_de_vendas_mes * 0.15)
+print "O salario total do vendedor e R$ %.2f" %(salario_total)

@@ -1,0 +1,27 @@
+1. Linguagens compiladas são aquelas que são taduzidas por completo para linguagem de máquina(código objeto) por uma ferramenta chamada compilador. Após esse proceso, o código se torna executável pelo computador.
+
+Linguagens interpretadas são traduzidas linha a linha por uma ferramenta chamada interpretador em tempo de execução.
+
+2. Erro de sintaxe: relacionadas a quebra das regras de construção de código definidos pelo compilador ou interpretador
+   Erro de semântica: relacionadas a erro de lógica dentro do código
+   
+3. São: 
+	- os numéricos(inteiros e floats): utilizado para representar os números e aplicados principalmente em expressões numéricas
+	- strings: utilizado para representar texto ou palavras
+	- booleanos: representa os valores true ou false, utilizado como resultado de expressões lógicas.
+
+4. Estas partes são as funções. Elas são formadas por um nome que as identifica e compostas por parâmetros, que são as variáveis que ela recebe para ser utilizado em sua computação(lógica) interna. A principal vantagem de uma função é a sua reutilização por outros módulos ou mesmos outras funções, além de melhorar a organização e leitura do código.
+
+5. Importar módulo inteiro:
+	import calculadora
+
+   Importar apenas uma função
+	from calculadora import somar
+	from calculadora import subtrair
+  
+   Importar todas as funções
+	from calculadora import *
+
+   Importar e renomear
+	from calculadora import somar as adicionar
+
