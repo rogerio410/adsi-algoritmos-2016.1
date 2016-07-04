@@ -13,5 +13,5 @@ def main():
 if ook > 10:
         print ook
 
-if __name__ == '__main__'
+if __name__ == '__main__':
         main()

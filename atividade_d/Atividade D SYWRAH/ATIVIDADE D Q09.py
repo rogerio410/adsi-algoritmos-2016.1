@@ -4,7 +4,7 @@ def imprime_multiplos(numero):
     else:
         print numero
         multiplos = imprime_multiplos(numero,numero + 1)
-        return 'Os 10 primeiros multiplos são: ', multiplos
+        return 'Os 10 primeiros multiplos sao: ', multiplos
 
 
 def main():

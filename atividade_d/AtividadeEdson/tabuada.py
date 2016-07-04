@@ -4,11 +4,11 @@ def calculadora(numero,multi):
 	else:
 		multi= numero+1
 		total= numero*multi
-		print "%d X %d = %d"%(numero,mult,total)
+		print "%d X %d = %d"%(numero,multi,total)
 		multi = multi +1
 		calculadora(numero,multi)
 def main():
-	numero=(int(input("numero"))
+	numero=(int(input("numero")))
 		
 if __name__=="__main__":
 	main()	

@@ -1,5 +1,5 @@
-#Escreva um programa que receba um número inteiro e
-#que recursivamente escreva os seus 10 primeiros múltiplos.
+#Escreva um programa que receba um numero inteiro e
+#que recursivamente escreva os seus 10 primeiros multiplos.
 
 def multiplo(numero):
     if numero==0:

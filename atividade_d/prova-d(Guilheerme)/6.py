@@ -1,11 +1,4 @@
-'''
-   semantica
-   sintaxe
-   erro logico
-'''
-
-
-nome = str(input())
+nome = raw_input()
 sal_fixo = float(input())
 tot_vendas = float(input())
 comisao = tot_vendas*0.15

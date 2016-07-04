@@ -18,6 +18,7 @@ else:
     area_trapezio = (valor_a + valor_b) / 2 * valor_c
     print('\nA area do trapezio eh %.1f') % area_trapezio
 
+#1 2 4
  
             
 

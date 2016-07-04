@@ -4,6 +4,7 @@ Linguagens interpretadas são traduzidas linha a linha por uma ferramenta chamad
 
 2. Erro de sintaxe: relacionadas a quebra das regras de construção de código definidos pelo compilador ou interpretador
    Erro de semântica: relacionadas a erro de lógica dentro do código
+   Runtime???
    
 3. São: 
 	- os numéricos(inteiros e floats): utilizado para representar os números e aplicados principalmente em expressões numéricas
