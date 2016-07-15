@@ -6,7 +6,7 @@ def main():
 
 def mmc(numero1, numero2):
 	multiplo = 1 
-	
+
 	while True:
 		if multiplo % numero1 == 0 and multiplo % numero2 == 0:
 			return multiplo
