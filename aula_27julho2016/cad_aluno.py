@@ -40,7 +40,9 @@ def listar_alunos(bd_alunos):
 def remover_aluno(bd_alunos):
 	listar_alunos(bd_alunos)
 	posicao = input('Qual indice? ')
-	del bd_alunos[posicao]
+	#del bd_alunos[posicao]
+	removido = bd_alunos.pop(posicao)
+	print 'Aluno: ', removido['nome'], ' removido.'
 
 
 
