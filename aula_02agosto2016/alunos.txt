@@ -1,0 +1,3 @@
+{'idade': 32, 'sexo': 'M', 'nome': 'ROGERIO DA SILVA'}
+{'idade': 26, 'sexo': 'M', 'nome': 'JOSEPH GARIBALD.'}
+{'idade': 7, 'sexo': 'M', 'nome': 'ALEX NY'}
