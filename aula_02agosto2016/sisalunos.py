@@ -1,9 +1,10 @@
 def main():
-	menu = ' 1 - Novo \n 2 - Listar'\
-		' \n 3 - Remover \n 0 - Sair \n OP >> '
+	menu = ' 1 - Novo \n 2 - Listar \n 3 - Remover \n 0 - Sair \n OP >> '
+		
 	#print menu
 	#bd_alunos =  #[] #list()
 	bd_alunos = inicializar()
+
 	
 	while True:
 		opcao = input(menu)
