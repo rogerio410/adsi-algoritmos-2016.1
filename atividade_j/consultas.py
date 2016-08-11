@@ -7,7 +7,8 @@ def consultas(medalhas, paises):
 	" 3 - Paises Sem Medalhas \n 4 - Medalhas por Sexo \n"\
 	" 5 - Pais-Medalhas por habitante/atleta \n" \
 	" 6 - Pesquisa por Nome do Atleta\n" \
-	" 7 - Pesquias por Nome do Pais \n" \
+	" 7 - Pesquisa por Nome do Pais \n" \
+	" 8 - Pesquisa por Nome do Esporte" \
 	"\n 0 - Voltar \n opcao >>> "
 
 	while True:
@@ -29,6 +30,8 @@ def consultas(medalhas, paises):
 			medalhas_por_nome_do_atleta(medalhas, paises)
 		elif opcao == 7:
 			medalhas_por_nome_do_pais(medalhas, paises)
+		elif opcao == 8:
+			medalhas_por_nome_do_esporte(medalhas, paises)
 		else:
 			print 'Opcao invalida.'
 
@@ -153,5 +156,13 @@ def medalhas_por_nome_do_pais(medalhas, paises):
 					print '%s - %s - %s  - %s' % (medalha['atleta'], medalha['esporte'], medalha['medalha'], pais['nome'])
 
 
+def medalhas_por_nome_do_esporte(medalhas, paises):
+
+	parte_nome = raw_input('Nome do Esporte: ')
+
+	for medalha in medalhas:
+		if parte_nome.upper() in medalha['esporte'].upper():
+			pais = obter_pais_por_id(medalha['pais_id'], paises)
+			print '%s - %s - %s  - %s' % (medalha['atleta'], medalha['esporte'], medalha['medalha'], pais['nome'])
 
 
