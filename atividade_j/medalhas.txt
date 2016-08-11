@@ -1,2 +1,1 @@
-{'pais_id': 1, 'medalha': 'Ouro', 'esporte': 'Judo', 'modalidade': 'Feminino', 'atleta': 'Sara'}
-{'pais_id': 1, 'esporte': 'Futebol', 'atleta': 'Equipe Futebol Feminino', 'modalidade': 'Masculino', 'medalha': 'Ouro'}
+{'pais_id': 1, 'medalha': 'Ouro', 'esporte': 'Futebol', 'modalidade': 'Masculino', 'atleta': 'Equipe Futebol Feminino'}

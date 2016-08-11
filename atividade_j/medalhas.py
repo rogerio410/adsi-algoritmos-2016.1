@@ -30,14 +30,17 @@ def listar_paises(paises):
 	for pais in paises:
 		print "%d - %s" % (pais['id'], pais['nome'])
 
-def remover_medalha():
-	pass
+def remover_medalha(medalhas, paises):
+	lista_todas_medalhas(medalhas, paises)
+	medalha_id = input('ID da medalha a remover: ')
+	medalhas.pop(medalha_id)
 
 def lista_todas_medalhas(medalhas, paises):
-	
+	ordem = 0
 	for medalha in medalhas:
 		pais = obter_pais_por_id(medalha['pais_id'], paises)
-		print "%s - %s - %s - %s" % (medalha['atleta'], medalha['esporte'], medalha['medalha'], pais['nome'])
+		print "%d - %s - %s - %s - %s" % (ordem, medalha['atleta'], medalha['esporte'], medalha['medalha'], pais['nome'])
+		ordem += 1
 
 def obter_pais_por_id(pais_id, paises):
 	for pais in paises:

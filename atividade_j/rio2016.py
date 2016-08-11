@@ -22,7 +22,7 @@ def main():
 		elif opcao == 2:
 			lista_todas_medalhas(medalhas, paises)
 		elif opcao == 3:
-			remover_medalha()
+			remover_medalha(medalhas, paises)
 		elif opcao == 4:
 			consultas()
 		else:
