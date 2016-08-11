@@ -24,7 +24,7 @@ def main():
 		elif opcao == 3:
 			remover_medalha(medalhas, paises)
 		elif opcao == 4:
-			consultas()
+			consultas(medalhas, paises)
 		else:
 			print "Opcao invalida"
 

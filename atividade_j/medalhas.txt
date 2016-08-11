@@ -1,1 +1,3 @@
-{'pais_id': 1, 'medalha': 'Ouro', 'esporte': 'Futebol', 'modalidade': 'Masculino', 'atleta': 'Equipe Futebol Feminino'}
+{'pais_id': 1, 'medalha': 'Ouro', 'atleta': 'Equipe Futebol Feminino', 'modalidade': 'Masculino', 'esporte': 'Futebol'}
+{'pais_id': 1, 'esporte': 'Judo', 'atleta': 'Sara', 'modalidade': 'Femino', 'medalha': 'Bronze'}
+{'pais_id': 5, 'esporte': 'Tiro', 'atleta': 'Testando', 'modalidade': 'Masculino', 'medalha': 'Prata'}
