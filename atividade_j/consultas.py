@@ -3,7 +3,9 @@ from medalhas import obter_pais_por_id
 
 def consultas(medalhas, paises):
 	cabecalho = "\n **** Consultas e Estatisticas **** \n"
-	menu_consulta = " 1 - Medalhas por Pais \n 2 - Medalhas por Continente \n 0 - Voltar \n opcao >>> "
+	menu_consulta = " 1 - Medalhas por Pais \n 2 - Medalhas por Continente \n"\
+	" 3 - Paises Sem Medalhas \n 0 - Voltar" \
+	 "\n opcao >>> "
 
 	while True:
 		opcao = input(cabecalho + menu_consulta)
@@ -14,6 +16,8 @@ def consultas(medalhas, paises):
 			medalhas_por_pais(medalhas, paises)
 		elif opcao == 2:
 			medalhas_por_continente(medalhas, paises)
+		elif opcao == 3:
+			paises_sem_medalhas(medalhas, paises)
 		else:
 			print 'Opcao invalida.'
 
@@ -55,3 +59,22 @@ def qtd_medalha_por_continente(medalhas, paises, continente, tipo_medalha):
 			qtd += 1
 
 	return qtd
+
+def paises_sem_medalhas(medalhas, paises):
+
+	nomes_paises_medalhistas = paises_com_medalhas(medalhas, paises)
+
+	for pais in paises:
+		if pais['nome'] not in nomes_paises_medalhistas:
+			print "%s" % pais['nome']
+
+
+
+def paises_com_medalhas(medalhas, paises):
+	lista_nomes_paises_medalhista = []
+	for medalha in medalhas:
+		pais = obter_pais_por_id(medalha['pais_id'], paises)
+		if pais['nome'] not in lista_nomes_paises_medalhista:
+			lista_nomes_paises_medalhista.append(pais['nome'])
+
+	return lista_nomes_paises_medalhista
