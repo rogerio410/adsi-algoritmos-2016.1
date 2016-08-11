@@ -4,8 +4,8 @@ from medalhas import obter_pais_por_id
 def consultas(medalhas, paises):
 	cabecalho = "\n **** Consultas e Estatisticas **** \n"
 	menu_consulta = " 1 - Medalhas por Pais \n 2 - Medalhas por Continente \n"\
-	" 3 - Paises Sem Medalhas \n 4 - Medalhas por Sexo "\
-	" 5 - Pais-Medalhas por habitante/atleta"
+	" 3 - Paises Sem Medalhas \n 4 - Medalhas por Sexo \n"\
+	" 5 - Pais-Medalhas por habitante/atleta \n" \
 	"\n 0 - Voltar \n opcao >>> "
 
 	while True:
@@ -21,6 +21,8 @@ def consultas(medalhas, paises):
 			paises_sem_medalhas(medalhas, paises)
 		elif opcao == 4:
 			medalhas_por_sexo(medalhas)
+		elif opcao == 5:
+			medalhas_pais_habitantes_atletas(medalhas, paises)
 		else:
 			print 'Opcao invalida.'
 
@@ -94,4 +96,37 @@ def medalhas_por_sexo(medalhas):
 			qtd_masculinho += 1
 
 	print "Medalhas: Feminino --> %d & Masculinho --> %d" % (qtd_feminino, qtd_masculinho)
+
+def medalhas_pais_habitantes_atletas(medalhas, paises):
+	maior_por_habitante = 0
+	pais_maior_habitante = ''
+	maior_por_atleta = 0
+	pais_maior_atleta = ''
+
+	for pais in paises:
+		qtd_medalhas = qtd_medalhas_qq_tipo(medalhas, pais)
+		medalhas_por_habitante = qtd_medalhas / float(pais['populacao'])
+		medalhas_por_atletas = qtd_medalhas / float(pais['atletas'])
+
+		if medalhas_por_habitante > maior_por_habitante:
+			maior_por_habitante = medalhas_por_habitante
+			pais_maior_habitante = pais
+
+		if medalhas_por_atletas > maior_por_atleta:
+			maior_por_atleta = medalhas_por_atletas
+			pais_maior_atleta = pais
+
+	print "Maior Medalhista por Habitante = %s == %.10f" % (pais_maior_habitante['nome'], maior_por_habitante)
+	print "Maior Medalhista por Atletas = %s == %f" % (pais_maior_atleta['nome'], maior_por_atleta)
+
+
+
+
+
+def qtd_medalhas_qq_tipo(medalhas, pais):
+	qtd = 0
+	for medalha in medalhas:
+		if medalha['pais_id'] == pais['id']:
+			qtd += 1
+	return qtd
 
