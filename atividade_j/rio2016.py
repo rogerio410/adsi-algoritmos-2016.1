@@ -14,12 +14,13 @@ def main():
 		opcao = input(cabecalho + menu)
 
 		if opcao == 0:
-			finalizar(paises)
+			finalizar(paises, medalhas)
 			break
 		elif opcao == 1:
-			nova_medalha()
+			medalha = nova_medalha(paises)
+			medalhas.append(medalha)
 		elif opcao == 2:
-			lista_todas_medalhas()
+			lista_todas_medalhas(medalhas, paises)
 		elif opcao == 3:
 			remover_medalha()
 		elif opcao == 4:
@@ -41,23 +42,39 @@ def inicializar_paises():
 			pais = {'id': codigo,'nome': temp[0], 'continente': temp[1], 'populacao': int(temp[2]), 'atletas': int(temp[3])}
 			codigo += 1
 			paises.append(pais)
-
+		arq_paises_importacao.close()
 		return paises
 
 	else: #carregar paises em memoria
-		pass
+		arq_paises.seek(0)
+		for linha in arq_paises:
+			paises.append(eval(linha))
+		return paises
 
 
 def inicializar_medalhas():
-	pass
+	arq_medalhas = open('medalhas.txt', 'r')
+	medalhas = []
+	for linha in arq_medalhas:
+		medalhas.append(eval(linha))
 
-def finalizar(paises):
+	arq_medalhas.close()
+	return medalhas
+
+def finalizar(paises, medalhas):
 	# Gravar Paises
 	arq_paises = open('paises.txt', 'w')
 	for pais in paises:
 		arq_paises.write(str(pais) + '\n')
 
 	arq_paises.close()
+
+	#Gravar Medalhas
+	arq_medalhas = open('medalhas.txt', 'w')
+	for medalha in medalhas:
+		arq_medalhas.write(str(medalha) + '\n')
+
+	arq_medalhas.close()
 
 
 if __name__ == '__main__':
