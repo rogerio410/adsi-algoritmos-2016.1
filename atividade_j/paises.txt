@@ -1,5 +1,5 @@
-{'nome': 'BRASIL', 'continente': 'AMERICA', 'id': 1, 'populacao': 200000000, 'atletas': 420}
-{'nome': 'CHINA', 'continente': 'ASIA', 'id': 2, 'populacao': 3000000000, 'atletas': 500}
-{'nome': 'FRANCA', 'continente': 'EUROPA', 'id': 3, 'populacao': 5000000, 'atletas': 340}
-{'nome': 'AUSTRALIA', 'continente': 'OCEANIA', 'id': 4, 'populacao': 3000000, 'atletas': 200}
-{'nome': 'AFRICA DO SUL', 'continente': 'AFRICA', 'id': 5, 'populacao': 80000000, 'atletas': 100}
+{'atletas': 420, 'continente': 'AMERICA', 'id': 1, 'populacao': 200000000, 'nome': 'BRASIL'}
+{'atletas': 500, 'continente': 'ASIA', 'id': 2, 'populacao': 3000000000, 'nome': 'CHINA'}
+{'atletas': 340, 'continente': 'EUROPA', 'id': 3, 'populacao': 5000000, 'nome': 'FRANCA'}
+{'atletas': 200, 'continente': 'OCEANIA', 'id': 4, 'populacao': 3000000, 'nome': 'AUSTRALIA'}
+{'atletas': 100, 'continente': 'AFRICA', 'id': 5, 'populacao': 80000000, 'nome': 'AFRICA DO SUL'}

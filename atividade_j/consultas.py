@@ -4,8 +4,9 @@ from medalhas import obter_pais_por_id
 def consultas(medalhas, paises):
 	cabecalho = "\n **** Consultas e Estatisticas **** \n"
 	menu_consulta = " 1 - Medalhas por Pais \n 2 - Medalhas por Continente \n"\
-	" 3 - Paises Sem Medalhas \n 0 - Voltar" \
-	 "\n opcao >>> "
+	" 3 - Paises Sem Medalhas \n 4 - Medalhas por Sexo "\
+	" 5 - Pais-Medalhas por habitante/atleta"
+	"\n 0 - Voltar \n opcao >>> "
 
 	while True:
 		opcao = input(cabecalho + menu_consulta)
@@ -18,6 +19,8 @@ def consultas(medalhas, paises):
 			medalhas_por_continente(medalhas, paises)
 		elif opcao == 3:
 			paises_sem_medalhas(medalhas, paises)
+		elif opcao == 4:
+			medalhas_por_sexo(medalhas)
 		else:
 			print 'Opcao invalida.'
 
@@ -78,3 +81,17 @@ def paises_com_medalhas(medalhas, paises):
 			lista_nomes_paises_medalhista.append(pais['nome'])
 
 	return lista_nomes_paises_medalhista
+
+
+def medalhas_por_sexo(medalhas):
+	qtd_masculinho = 0
+	qtd_feminino = 0
+
+	for medalha in medalhas:
+		if medalha['modalidade'] == 'Feminino':
+			qtd_feminino += 1
+		else:
+			qtd_masculinho += 1
+
+	print "Medalhas: Feminino --> %d & Masculinho --> %d" % (qtd_feminino, qtd_masculinho)
+
