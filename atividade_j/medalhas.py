@@ -1,13 +1,18 @@
 def nova_medalha(paises):
 
 	tipos_medalhas = ['Ouro', 'Prata', 'Bronze'] 
+	modalidades = ['Masculino', 'Feminino', 'Misto']
 
 	atleta = raw_input('Atleta: ')
 	esporte = raw_input('Esporte: ')
+
 	modalidade = raw_input('Masculino - Feminino - Misto: ')
+	while modalidade not in modalidades:
+		modalidade = raw_input('Masculino - Feminino - Misto: ')
 
 	medalha = raw_input('Ouro - Prata - Bronze: ')
-	while  medalha not in tipos_medalhas:
+	while medalha != 'Ouro' and medalha != 'Prata' and medalha != 'Bronze':
+	#while medalha not in tipos_medalhas:
 		medalha = raw_input('Ouro - Prata - Bronze: ')
 	
 	listar_paises(paises)
