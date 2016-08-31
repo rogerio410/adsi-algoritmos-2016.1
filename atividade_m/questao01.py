@@ -15,10 +15,10 @@ def main():
 
 def bubble(conjunto):
 
-	for i in range(len(conjunto)): 
+	for i in range(tamanho((conjunto)): 
 		trocou = False
-		for j in range(len(conjunto) - i - 1):
-			if tamanho_palavra(conjunto[j]) < tamanho_palavra(conjunto[j + 1]):
+		for j in range(tamanho((conjunto) - i - 1):
+			if tamanho(conjunto[j]) < tamanho(conjunto[j + 1]):
 				temp = conjunto[j + 1]
 				conjunto[j + 1] = conjunto[j]
 				conjunto[j] = temp
